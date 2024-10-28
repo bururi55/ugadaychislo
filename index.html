@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Угадай Число</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+  </head>
+
+  <body>
+    <h1>Угадай число</h1>
+
+    <p>Мы выбрали случайное число от 1 до 100. Посмотрим, сможете ли вы угадать его за 10 ходов или меньше. Мы сообщим вам, была ли ваша догадка слишком высокой или слишком низкой.</p>
+
+    <div class="form">
+      <label for="guessField">Напиши число: </label>
+      <input type="number" min="1" max="100" required id="guessField" class="guessField">
+      <input type="submit" value="Угадать!" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
